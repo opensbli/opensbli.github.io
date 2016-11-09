@@ -2,7 +2,7 @@
 title: OpenSBLI
 email: C.T.Jacobs@soton.ac.uk
 description: A framework for the automated derivation of finite difference solvers from high-level problem descriptions 
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://opensbli.github.io" # the base hostname & protocol for your site
 twitter_username: ctjacobs_uk
 github_username:  opensbli
