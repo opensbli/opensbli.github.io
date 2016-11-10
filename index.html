@@ -3,18 +3,20 @@ layout: default
 ---
 
 <!-- Introduction -->
-    <section id="one">
+    <section id="introduction">
         <div class="container">
             <header class="major">
                 <h2>OpenSBLI</h2>
                 <p>A framework for the automated derivation of finite difference solvers from high-level problem descriptions.</p>
             </header>
-            <p>Python package... code generation... etc</p>
+            <p>OpenSBLI is a Python-based modelling framework that is capable of expanding a set of differential equations written in Einstein notation, and automatically generating C code that performs the finite difference approximation to obtain a solution. This C code is then targetted with the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS library</a> towards specific hardware backends, such as MPI/OpenMP for execution on CPUs, and CUDA/OpenCL for execution on GPUs.</p>
+
+<p>The main focus of OpenSBLI is on the solution of the compressible Navier-Stokes equations with application to shock-boundary layer interactions (SBLI). However, in principle, any set of equations that can be written in Einstein notation may be solved.</p>
         </div>
     </section>
 
 <!-- Features -->
-    <section id="two">
+    <section id="features">
         <div class="container">
             <h3>Core Functionality</h3>
             <p>........</p>
@@ -30,7 +32,7 @@ layout: default
     </section>
 
 <!-- Applications -->
-    <section id="three">
+    <section id="applications">
         <div class="container">
             <h3>Applications</h3>
             <p>Here are a few applications that OpenSBLI has been used for.</p>
