@@ -970,7 +970,7 @@ $size-header: 23em;
 			border-top: solid ($size-border-width * 3) $color-border;
 			
 			> .container {
-				padding: 6em 0 4em 0;
+				padding: 2em 0 2em 0;
 			}
 			
 			&:first-child {
@@ -989,7 +989,7 @@ $size-header: 23em;
 			background-size: cover;
 			content: '';
 			display: block;
-			height: 10em;
+			height: 12em;
 			width: 100%;
 		}
 	}
@@ -1001,7 +1001,7 @@ $size-header: 23em;
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 3em 0 2em 0;
 		
 		.copyright {
 			line-height: 1em;

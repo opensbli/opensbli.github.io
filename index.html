@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 <!-- Introduction -->
@@ -9,46 +10,24 @@ layout: default
                 <h2>OpenSBLI</h2>
                 <p>A framework for the automated derivation of finite difference solvers from high-level problem descriptions.</p>
             </header>
-            <p>Python package... code generation... etc</p>
+            <p>OpenSBLI is a Python-based modelling framework that is capable of expanding a set of differential equations written in Einstein notation, and automatically generating C code that performs the finite difference approximation to obtain a solution. This C code is then targetted with the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS library</a> towards specific hardware backends, such as MPI/OpenMP for execution on CPUs, and CUDA/OpenCL for execution on GPUs.</p>
+
+<p>The main focus of OpenSBLI is on the solution of the compressible Navier-Stokes equations with application to shock-boundary layer interactions (SBLI). However, in principle, any set of equations that can be written in Einstein notation may be solved.</p>
         </div>
     </section>
 
 <!-- Features -->
-    <section id="two">
+    <section id="features">
         <div class="container">
-            <h3>Core Functionality</h3>
-            <p>........</p>
+            <h3>Key Features</h3>
             <ul class="feature-icons">
-                <li class="fa-code">Express the differential equations to be solved in Einstein/index notation</li>
-                <li class="fa-cubes">OPS-compliant C code that solves the equations is automatically generated</li>
-                <li class="fa-cubes">Code is targetted towards various backends, including MPI, CUDA, OpenCL and OpenACC using the OPS library</li>
-                <li class="fa-code">Open-source project, released under the GNU General Public License</li>
-                <li class="fa-coffee">Separation of concerns: model development is kept separate from backend support</li>
-                <li class="fa-coffee">Example applications and user documentation are available</li>
+                <li class="fa-pencil">Express the differential equations to be solved in Einstein/index notation</li>
+                <li class="fa-code">OPS-compliant C code that solves the equations is automatically generated</li>
+                <li class="fa-plug">Code is targetted towards various backends, including MPI, CUDA, OpenCL</li>
+                <li class="fa-cog">Open-source project, released under the GNU General Public License</li>
+                <li class="fa-users">Separation of concerns: model dev kept separate from backend support</li>
+                <li class="fa-book">Example applications and user documentation are available</li>
             </ul>
         </div>
     </section>
 
-<!-- Applications -->
-    <section id="three">
-        <div class="container">
-            <h3>Applications</h3>
-            <p>Here are a few applications that OpenSBLI has been used for.</p>
-            <div class="features">
-                <article>
-                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Taylor-Green vortex</h4>
-                        <p>Moar text here.</p>
-                    </div>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                    <div class="inner">
-                        <h4>Shocks</h4>
-                        <p>Moar text here.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
