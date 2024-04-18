@@ -8,12 +8,14 @@ title: Home
         <div class="container">
             <header class="major">
                 <h2>OpenSBLI</h2>
-                <p>A framework for the automated derivation of finite difference solvers from high-level problem descriptions.</p>
+                <p>A framework for the automated derivation of finite difference solvers from high-level problem descriptions</p>
             </header>
-            <p>OpenSBLI is a Python-based modelling framework that is capable of expanding a set of differential equations written in Einstein notation, and automatically generating C code that performs the finite difference approximation to obtain a solution. This C code is then targetted with the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS library</a> towards specific hardware backends, such as MPI/OpenMP for execution on CPUs, and CUDA/OpenCL for execution on GPUs.</p>
+            <p>OpenSBLI is a Python-based modelling framework that is capable of expanding a set of differential equations written in Einstein notation and automatically generating C code that performs the finite difference approximation to obtain a solution. This C code is then targetted with the <a href="http://www.oerc.ox.ac.uk/projects/ops">OPS library</a> towards specific hardware backends, such as MPI/OpenMP for execution on CPUs, and CUDA/OpenCL for execution on GPUs. The main focus of OpenSBLI is on the solution of the compressible Navier-Stokes equations with application to shock-boundary layer interactions (SBLI). However, in principle, any set of equations that can be written in Einstein notation may be solved. </p>
 
-<p>The main focus of OpenSBLI is on the solution of the compressible Navier-Stokes equations with application to shock-boundary layer interactions (SBLI). However, in principle, any set of equations that can be written in Einstein notation may be solved.</p>
+<p>OpenSBLI has been through three main phases of development. Version 1 (master branch, Jacobs et al 2017) was developed by Satya Jammy and Christian Jacobs as a proof of concept, with application to a triply-periodic test case. Version 2 (cpc-release branch, see Lusher et al, 2021) was developed by David Lusher and Satya Jammy and included shock-capturing, wall boundary condition and an expanded range of applications, including a transitional shock-wave/boundary-layer interaction problem in 3D. Version 3 (jaxa-release, Lusher et al, submitted for publication, 2024) was primarily developed by David Lusher and includes support for multiblock grids, additional filter treatments and a flagship application to an airfoil in transonic flow.</p>
 
+<p>OpenSBLI has been tested on large CPU and GPU machines and has shown excellent per-node performance and scaling characteristics. Despite the automated code generation process it is generally able to achieve similar performance levels to hand-crafted code. In addition, by exploiting the automation process it was possible (see Jammy et al 2019) to optimise the use of small numbers of intermediate storage arrays leading to a factor of two improvement over traditional hand-written codes. Examples of applications and publications are listed in the linked pages here. The release code includes a documentation folder.</p>
+            
 <p><center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ob4NKZgUK3U" frameborder="0" allowfullscreen></iframe>
 </center></p>
